@@ -1,0 +1,132 @@
+
+.imagens-slider{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+ 
+.imagens-slider .slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.imagens-slider .slider.mostrar {
+    opacity: 1;
+}
+
+.imagem1{
+
+    background-image: url(./imagens/imagem1.png);
+    background-size: cover;
+    padding: 180px;
+}
+
+.imagem2{
+    width: 1920px;
+    height: 1080px;
+   background-image: url(./imagens/imagem2.png);
+   background-size: cover;
+   padding: 180px;
+}
+
+.imagem3{
+    width: 1920px;
+    height: 1080px;
+   background-image: url(./imagens/imagem3.png);
+   background-size: cover;
+   padding: 180px;
+}
+
+.imagem4{
+    width: 1920px;
+    height: 1080px;
+   background-image: url(./imagens/imagem4.png);
+   background-size: cover;
+   padding: 180px;
+   
+
+}
+
+.article {
+    background-color: white;
+    width: 620px;
+    height: 700px;
+    padding: 60px;
+    border-radius: 10px;
+    
+    
+}
+
+article{
+    font-family: 'Roboto', sans-serif;
+}
+
+ article h2 {
+    font-weight:500;
+    font-size: 50px;
+    
+}
+
+article p {
+    font-weight:300;
+    font-size: 25px;
+    line-height: 35px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    
+}
+
+ .saiba-Mais {
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.imagem1 article a {
+    color: #C50000;
+}
+
+.imagem2 article a {
+    color: ##D9DD10;
+}
+
+.imagem3 article a {
+    color:#A63A17;
+}
+
+.imagem4 article a {
+    color: #10ACDD;
+}
+
+.seta-voltar, .seta-avancar {
+    position: absolute;
+    z-index: 1;
+}
+
+.seta-voltar .imagem-seta, .seta-avancar .imagem-seta {
+width: 50px;
+height: 50px;
+}
+
+.seta-voltar{
+    left: 4%;
+}
+
+.seta-avancar{
+    right: 4%; 
+}
+
+.opacidade{
+    opacity: 0.6;
+    cursor: default;
+}
